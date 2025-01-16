@@ -1,0 +1,779 @@
+/* Основные стили */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+#skills h2,
+#portfolio h2,
+#contacts h2 {
+    text-transform: uppercase;
+    font-weight: 900; /* Толщина шрифта 900 */
+}
+
+p {
+    color: #ffffff; /* Белый цвет */
+}
+
+
+
+/* Первый экран */
+#hero {
+    background-color: #262626; /* Темный фон */
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    gap: 40px; /* Расстояние между текстом и фото */
+    align-items: center; /* Выравнивание по центру */
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.greeting {
+    font-size: 48px; /* Увеличенный размер шрифта */
+    color: #ffffff; /* Белый */
+    margin: 0;
+    font-weight: 900; /* Жирный шрифт */
+    text-transform: uppercase; /* Все буквы заглавные */
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+#typed-text-white {
+    color: #ffffff; /* Белый цвет */
+}
+
+#typed-text-orange {
+    color: #ff6600; /* Оранжевый цвет */
+}
+
+.tagline {
+    font-size: 36px; /* Увеличенный размер шрифта */
+    color: #ffffff; /* Оранжевый */
+    margin: 10px 0 20px;
+    font-weight: 900; /* Жирный шрифт */
+    text-transform: uppercase; /* Все буквы заглавные */
+}
+
+.tagline .seo {
+    color: #ff6600; /* Оранжевый цвет для "SEOшник" */
+}
+
+.tagline .years {
+    color: #ff6600; /* Белый цвет для "+3 года" */
+}
+
+.subheading {
+    font-size: 24px; /* Размер шрифта */
+    color: #ffffff; /* Белый цвет */
+    font-weight: 700; /* Полужирный шрифт */
+    margin: 20px 0 10px; /* Отступы */
+    text-transform: uppercase; /* Все буквы заглавные */
+}
+
+.description {
+    font-size: 16px; /* Переведено в px */
+    color: #ffffffff; /* Светло-серый */
+    line-height: 1.8;
+    width: 100%; /* Фиксируем ширину */
+}
+
+.description p {
+    margin: 10px 0;
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание фото по правому краю */
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 300px; /* Адекватный размер фото */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Чтобы фото сохраняло пропорции */
+}
+
+/* Опыт */
+#experience h2 {
+    font-size: 32px; /* Размер заголовка */
+    color: #ff6600; /* Оранжевый цвет */
+    font-weight: 900; /* Жирный шрифт */
+    text-align: center; /* Выравнивание по центру */
+    text-transform: uppercase; /* Все буквы заглавные */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Обертка для блоков с опытом и обязанностями */
+.experience-wrapper {
+    background-color: #262626; /* Подложка */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+.experience-item {
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.experience-period {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по центру */
+    margin-bottom: 10px; /* Отступ между периодами */
+}
+
+.period {
+    font-size: 18px; /* Размер текста */
+    color: #ffffff; /* Белый цвет */
+    font-weight: 400; /* Обычный шрифт */
+}
+
+.dots {
+    flex-grow: 1; /* Растягиваем пунктирную линию */
+    border-bottom: 2px dotted #cccccc; /* Пунктирная линия */
+    margin: 0 10px; /* Отступы слева и справа */
+}
+
+.company {
+    font-size: 18px; /* Размер текста */
+    color: #ff6600; /* Оранжевый цвет */
+    font-weight: 700; /* Полужирный шрифт */
+}
+
+/* Стили для блока с обязанностями */
+.responsibilities {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.responsibilities h3 {
+    font-size: 24px; /* Размер заголовка */
+    color: #ff6600; /* Оранжевый цвет */
+    font-weight: 900; /* Жирный шрифт */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.responsibilities ul {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 0; /* Убираем отступ для маркеров */
+}
+
+.responsibilities li {
+    font-size: 16px; /* Размер текста */
+    color: #ffffff; /* Белый цвет */
+    margin-bottom: 8px; /* Отступ между пунктами */
+    position: relative; /* Для кастомных маркеров */
+    padding-left: 20px; /* Отступ для кастомных маркеров */
+}
+
+.responsibilities li::before {
+    content: "•"; /* Кастомный маркер */
+    color: #ff6600; /* Оранжевый цвет */
+    font-size: 20px; /* Размер маркера */
+    position: absolute; /* Позиционируем маркер */
+    left: 0; /* Выравниваем по левому краю */
+    top: -2px; /* Корректируем вертикальное выравнивание */
+}
+
+/* Навыки */
+#skills {
+    background-color: #1a1a1a; /* Темный фон */
+}
+
+#skills h2 {
+    font-size: 40px; /* Переведено в px */
+    color: #ff6600; /* Оранжевый */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skill-category {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px; /* Фиксированная высота для баланса */
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-category h3 {
+    font-size: 28px; /* Переведено в px */
+    color: #ff6600; /* Оранжевый */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.skill-category ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skill-category ul li {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.hard-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два столбца */
+    gap: 20px; /* Расстояние между столбцами */
+}
+
+.hard-skills-grid ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hard-skills-grid ul li {
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+/* Кейсы */
+#portfolio {
+    background-color: transparent; /* Убрали фон */
+}
+
+#portfolio h2 {
+    font-size: 40px; /* Переведено в px */
+    color: #ff6600; /* Оранжевый */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-item {
+    background-color: #262626; /* Фон для каждого кейса */
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.portfolio-item h3 {
+    font-size: 24px; /* Переведено в px */
+    color: #ff6600; /* Оранжевый */
+    margin: 0 0 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px; /* Переведено в px */
+    color: #ffffffff; /* Светло-серый */
+}
+
+.portfolio-item .more {
+    font-size: 16px; /* Переведено в px */
+    color: #ff6600; /* Оранжевый */
+    text-align: right;
+    margin: 10px 0 0;
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto; /* Добавляем прокрутку для всего модального окна */
+}
+
+.modal-content {
+    background-color: #262626;
+    margin: 5% auto; /* Уменьшаем отступ сверху для лучшего отображения */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    color: #ffffff;
+    max-height: 80vh; /* Ограничиваем высоту контента */
+    overflow-y: auto; /* Добавляем прокрутку внутри контента */
+}
+
+.modal-content h3 {
+    font-size: 24px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.modal-content h4.orange-bold {
+    font-size: 20px;
+    color: #ff6600;
+    font-weight: 900;
+    margin: 20px 0 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.modal-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.modal-content ul li {
+    margin: 10px 0;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer; /* Меняем курсор на "указатель" (руку) */
+    transition: transform 0.2s ease; /* Добавляем плавное увеличение при наведении */
+}
+
+.modal-image:hover {
+    transform: scale(1.02); /* Небольшое увеличение при наведении */
+}
+
+.close {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Стили для увеличенного изображения */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.expanded-image {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.close-image-modal {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.close-image-modal:hover {
+    color: #ff6600;
+}
+
+/* Контакты */
+#contacts {
+    background-color: #1a1a1a; /* Темный фон */
+    text-align: center; /* Центрируем текст внутри */
+}
+
+.contacts-grid {
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    gap: 20px;
+}
+
+.contact-item {
+    background-color: #262626; /* Темный фон */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px; /* Ограничиваем ширину */
+    width: 100%; /* Занимает всю доступную ширину, но не более max-width */
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent; /* Прозрачная граница по умолчанию */
+}
+
+.contact-item:hover {
+    border-image: linear-gradient(45deg, #ff6600, #ffa500, #ff4500) 1; /* Градиентная граница */
+    transform: scale(1.02); /* Небольшое увеличение */
+    cursor: pointer;
+}
+
+.contact-item p {
+    font-size: 16px;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/* Анимация курсора */
+#typed-text-orange {
+    border-right: 2px solid #ff6600; /* Оранжевый курсор */
+    white-space: nowrap; /* Чтобы текст не переносился */
+    overflow: hidden; /* Скрываем лишний текст */
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent; /* Исчезает */
+    }
+    50% {
+        border-color: #ff6600; /* Появляется */
+    }
+}
+
+
+
+
+
+
+
+/* Адаптивность для мобильных устройств (до 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 0;
+    }
+
+    /* Первый экран */
+    #hero {
+        padding: 40px 0;
+        position: relative; /* Для позиционирования фото */
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .greeting {
+        font-size: 28px;
+        white-space: normal;
+        height: 70px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        position: absolute; /* Абсолютное позиционирование */
+        top: 27%; /* Размещаем фото по центру */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Центрируем фото */
+    }
+
+    .hero-image img {
+        width: 150px;
+        border-radius: 10px;
+    }
+
+    .tagline {
+        font-size: 20px;
+        white-space: normal;
+        margin-top: 180px; /* Отступ для текста после фото */
+    }
+
+    .description {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.6;
+        white-space: normal;
+        padding: 0;
+    }
+
+    .description p {
+        margin: 10px 0;
+        white-space: normal;
+    }
+
+    /* Опыт */
+
+    #experience h2 {
+        font-size: 32px; /* Уменьшаем размер заголовка */
+    }
+
+    .experience-period {
+        flex-direction: column; /* Элементы в колонку */
+        align-items: flex-start; /* Выравниваем по левому краю */
+    }
+
+    .dots {
+        display: none; /* Скрываем пунктирную линию */
+    }
+
+    .company {
+        margin-top: 5px; /* Отступ между временным отрезком и названием агентства */
+    }
+
+    /* Навыки */
+    #skills h2 {
+        font-size: 24px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill-category h3 {
+        font-size: 20px;
+    }
+
+    .hard-skills-grid {
+        gap: 10px;
+    }
+
+    .hard-skills-grid ul {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    /* Кейсы */
+    #portfolio h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .portfolio-item h3 {
+        font-size: 18px;
+    }
+
+    .portfolio-item p {
+        font-size: 14px;
+    }
+
+    /* Модальные окна */
+    .modal {
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .modal-content h3 {
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        font-size: 14px;
+    }
+
+    /* Контакты */
+    #contacts h2 {
+        font-size: 24px;
+    }
+
+    .contacts-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+}
+
+/* Адаптивность для планшетов (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 30px 0;
+    }
+
+    /* Первый экран */
+    #hero {
+        padding: 50px 0;
+    }
+
+    .hero-content {
+        gap: 30px;
+    }
+
+    .greeting {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+
+    /* Навыки */
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-category h3 {
+        font-size: 22px;
+    }
+
+    /* Кейсы */
+    #portfolio h2 {
+        font-size: 28px;
+    }
+
+    .portfolio-item h3 {
+        font-size: 20px;
+    }
+
+    .portfolio-item p {
+        font-size: 16px;
+    }
+
+    /* Модальные окна */
+    .modal-content h3 {
+        font-size: 22px;
+    }
+
+    .modal-content p {
+        font-size: 16px;
+    }
+
+    /* Контакты */
+    #contacts h2 {
+        font-size: 28px;
+    }
+
+    .contact-item p {
+        font-size: 16px;
+    }
+}
+
+/* Десктопная версия (от 1024px) */
+@media (min-width: 1024px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-image img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .description {
+        padding: 0;
+    }
+}
+
+
+/* Обязанности в два столбца */
+.responsibilities ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Обязанности в один столбец для мобильной версии */
+@media (max-width: 767px) {
+    .responsibilities ul {
+        grid-template-columns: 1fr; /* Один столбец */
+    }
+}
+
+/* Подсветка границ при наведении */
+.experience-wrapper,
+.skill-category,
+.portfolio-item,
+.contact-item {
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent; /* Прозрачная граница по умолчанию */
+}
+
+.experience-wrapper:hover,
+.skill-category:hover,
+.portfolio-item:hover,
+.contact-item:hover {
+    border-color: #ff6600; /* Оранжевая граница */
+    transform: scale(1.02); /* Небольшое увеличение */
+    cursor: pointer;
+}
+
+/* Убираем лишние отступы для списка обязанностей */
+.responsibilities ul {
+    margin: 0;
+    padding-left: 20px; /* Отступ для маркеров */
+}
+
+.responsibilities li {
+    margin: 10px 0;
+}
