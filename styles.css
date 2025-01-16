@@ -26,6 +26,28 @@ p {
     color: #ffffff; /* Белый цвет */
 }
 
+/* Стили для десктопной версии */
+.telegram-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.telegram-link:hover {
+    color: #ff4500;
+}
+
+/* Скрываем ссылку в мобильной версии */
+@media (max-width: 767px) {
+    .telegram-link {
+        display: none;
+    }
+}
 
 
 /* Первый экран */
@@ -110,6 +132,8 @@ p {
     border-radius: 10px;
     object-fit: cover; /* Чтобы фото сохраняло пропорции */
 }
+
+
 
 /* Опыт */
 #experience h2 {
@@ -444,6 +468,16 @@ p {
     color: #ffffff;
 }
 
+.contact-item a {
+    color: #ffffff; /* Белый цвет */
+    text-decoration: none; /* Убираем подчёркивание */
+    transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.contact-item a:hover {
+    color: #ff6600; /* Оранжевый цвет при наведении */
+}
+
 
 /* Анимация курсора */
 #typed-text-orange {
@@ -500,6 +534,7 @@ p {
         font-size: 28px;
         white-space: normal;
         height: 70px;
+        margin-bottom: 20px;
     }
 
     .hero-image {
@@ -507,13 +542,13 @@ p {
         justify-content: center;
         margin: 20px 0;
         position: absolute; /* Абсолютное позиционирование */
-        top: 27%; /* Размещаем фото по центру */
+        top: 26%; /* Размещаем фото по центру */
         left: 50%;
         transform: translate(-50%, -50%); /* Центрируем фото */
     }
 
     .hero-image img {
-        width: 150px;
+        width: 250px;
         border-radius: 10px;
     }
 
@@ -727,7 +762,7 @@ p {
     }
 
     .hero-image img {
-        width: 300px;
+        width: 400px;
         border-radius: 10px;
     }
 
